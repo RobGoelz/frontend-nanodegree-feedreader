@@ -4,13 +4,12 @@
 
 * [Running](#running)
 * [Contribute!](#contributing)
-* [Attributions!](#attributions)
+* [Attributions](#attributions)
 
 
 ### Running
 
-The feed reader with testing should automatically load upon clicking [this link](
-https://htmlpreview.github.io/?https://github.com/RobGoelz/GWG-challenge/blob/master/frontend-nanodegree-arcade-game/index.html)!
+Due to the feed reader not working using the usual HTML preview link, please git clone or download the project [from here](https://github.com/RobGoelz/frontend-nanodegree-feedreader). Once you have downloaded the file, open index.html in Chrome or Firefox!
 
 ## Contributing
 
