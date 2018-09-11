@@ -59,7 +59,7 @@ $(function () {
     // found that Matthew Cranford had an excellent solution to
     // contain .feed class in a variable
     // but liked the toBeGreaterThan matcher used by
-    // Benjamin Cunningham, and refactored with it
+    // Benjamin Cunningham, and refactored with it 
     // see the following for details:
     // https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/
     // https://medium.com/letsboot/testing-javascript-with-jasmine-basics-48efe03cf973
