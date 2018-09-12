@@ -20,14 +20,14 @@ $(function () {
     it('has valid URLs', function () {
       for (let i = 0; i < allFeeds.length; i++) {
         expect(allFeeds[i].url).toBeDefined();
-        expect(allFeeds[i].url).not.toBe(0);
+        expect(allFeeds[i].url.length).not.toBe(0);
       }
     });
 
     it('has names defined', function () {
       for (let i = 0; i < allFeeds.length; i++) {
         expect(allFeeds[i].name).toBeDefined();
-        expect(allFeeds[i].name).not.toBe(0);
+        expect(allFeeds[i].name.length).not.toBe(0);
       }
     });
   });
@@ -59,7 +59,7 @@ $(function () {
     // found that Matthew Cranford had an excellent solution to
     // contain .feed class in a variable
     // but liked the toBeGreaterThan matcher used by
-    // Benjamin Cunningham, and refactored with it 
+    // Benjamin Cunningham, and refactored with it
     // see the following for details:
     // https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/
     // https://medium.com/letsboot/testing-javascript-with-jasmine-basics-48efe03cf973
