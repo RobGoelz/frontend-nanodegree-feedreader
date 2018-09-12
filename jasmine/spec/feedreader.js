@@ -84,7 +84,7 @@ $(function () {
         done();
       });
       loadFeed(1, function () {
-        feed0Entries = feedCT;
+        feed1Entries = feedCT;
         done();
       });
     });
