@@ -64,8 +64,8 @@ $(function () {
     // https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/
     // https://medium.com/letsboot/testing-javascript-with-jasmine-basics-48efe03cf973
     it('loadFeed completes', function (done) {
-      const feed = document.querySelector('.feed');
-      expect(feed.children.length).toBeGreaterThan(0);
+      const feedEntry = document.querySelector('.feed').querySelectorAll('.entry-link');
+      expect(feedEntry.length).toBeGreaterThan(0);
       done();
     });
   });
