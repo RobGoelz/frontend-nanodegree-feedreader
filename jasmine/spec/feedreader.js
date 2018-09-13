@@ -44,7 +44,7 @@ $(function () {
       expect(body.classList.contains('menu-hidden')).toBe(false);
       menuLink.click();
       expect(body.classList.contains('menu-hidden')).toBe(true);
-    });
+    }); // classList.contains NOT .hasClass intentional; wanted to use vanillaJS
   });
 
   describe('Initial Entries', function () {
