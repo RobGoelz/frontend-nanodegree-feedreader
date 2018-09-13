@@ -18,17 +18,15 @@ $(function () {
     });
 
     it('has valid URLs', function () {
-      for (let i = 0; i < allFeeds.length; i++) {
-        expect(allFeeds[i].url).toBeDefined();
-        expect(allFeeds[i].url.length).not.toBe(0);
-      }
+      allFeeds.forEach(function (feed) {
+        expect(feed.url).toBeTruthy();
+      });
     });
 
     it('has names defined', function () {
-      for (let i = 0; i < allFeeds.length; i++) {
-        expect(allFeeds[i].name).toBeDefined();
-        expect(allFeeds[i].name.length).not.toBe(0);
-      }
+      allFeeds.forEach(function (feed) {
+        expect(feed.name).toBeTruthy();
+      });
     });
   });
 
