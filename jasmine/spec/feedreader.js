@@ -48,10 +48,9 @@ $(function () {
   });
 
   describe('Initial Entries', function () {
+
     beforeEach(function (done) {
-      loadFeed(0, function () {
-        done();
-      });
+      loadFeed(0, done);
     });
 
     // found that Matthew Cranford had an excellent solution to
@@ -61,10 +60,9 @@ $(function () {
     // see the following for details:
     // https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/
     // https://medium.com/letsboot/testing-javascript-with-jasmine-basics-48efe03cf973
-    it('loadFeed completes', function (done) {
-      const feedEntry = document.querySelector('.feed').querySelectorAll('.entry-link');
+    it('loadFeed completes', function () {
+      const feedEntry = document.querySelector('.feed').querySelectorAll('.entry');
       expect(feedEntry.length).toBeGreaterThan(0);
-      done();
     });
   });
 
